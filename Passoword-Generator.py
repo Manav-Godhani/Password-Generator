@@ -48,4 +48,11 @@ def pass_generator(x):
     
 length = int(input("Enter the length of password ! :- "))
 pass_generator(length)
+
+# password generator - mnv_godhani 😉
+# This is a simple password generator script that allows users to create passwords based on their preferences.
+# It offers options to include alphabets, numbers, symbols, and special characters in the generated password.
+# The user can specify the desired length of the password, and the script will generate a random password accordingly.
+# Enjoy using it and stay secure!
+
     
