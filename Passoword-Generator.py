@@ -3,12 +3,14 @@
 import random
 alp = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 num = ["1","2","3","4","5","6","7","8","9","0"]
+symbols = ["!","@","#","$","%","^","&","*","(",")"]
 
 def pass_generator(x):
     print("=================================")
     print(" 1️⃣  Mix of Alphabets and Numbers")
     print(" 2️⃣  Only Alphabets")
     print(" 3️⃣  Only Numbers")
+    print(" 4️⃣  Mix of Alphabets, Numbers and Symbols")
     print("=================================")
     choice = int(input("Enter Your requirements :-  :- "))
 
@@ -26,6 +28,14 @@ def pass_generator(x):
         for i in range(1,x+1):
             a = random.choice(num)
             print(a, end="")
+    elif choice == 4:
+        allchar = alp + num + symbols
+        print("Generating Password...")
+        for i in range(1,x+1):
+            a = random.choice(allchar)
+            print(a, end="")
+    else:
+        print("Please Enter Valid Choice 👎")
 
     
       
